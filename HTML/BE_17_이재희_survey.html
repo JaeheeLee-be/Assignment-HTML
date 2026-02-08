@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <title>설문조사 양식</title>
+</head>
+<body>
+  <haeder>
+    <h1>회사구내 식당 메뉴에 희망하는 메뉴</h1>
+    <p>모든 항목에 빠짐없이 체크해주십시오.</p>
+  </haeder>
+  <hr>
+  <main>
+    <form>
+      <fieldset>
+        <legend>개인정보</legend>
+        <label for="name">이름</label>
+        <input type="text"
+        name="name" 
+        id="name" placeholder="본명을 입력하세요">
+        <br>
+        <label for="department">부서</label>
+        <input type="department" 
+        name="department"
+        id="department" placeholder="부서명을 쓰세요">
+      </fieldset>
+      <table border="2">
+        <caption>
+          <strong>추가 예정인 메뉴</strong>
+        </caption>
+        <thead>
+          <tr>
+            <th>한식</th>
+            <th>중식</th>
+            <th>일식</th>
+            <th>양식</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>떡갈비</td>
+            <td>동파육</td>
+            <td>오야코동</td>
+            <td>스테이크</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>육회비빔밥</td>
+            <td>팔보채</td>
+            <td>우나쥬</td>
+            <td>피쉬앤칩스</td>
+          </tr>
+        </tfoot>
+      </table>
+      <fieldset>
+        
+        <legend>설문</legend>
+
+        <p>원하는 메뉴가 어떻게 되십니까?</p>
+        <input type="radio" id="korean food" name="food">
+        <label for="teen">한식</label>
+        <input type="radio" id="chinese food" name="food">
+        <label for="teen">중식</label>
+        <input type="radio" id="japanese food" name="food">
+        <label for="teen">일식</label>
+        <input type="radio" id="food" name="food"> 
+        <label for="teen">양식</label>
+
+        <p>메뉴를 선택하여 추가할 때 가장 중요하게 생각하는 것은 무엇입니까? 모두 고르시오.</p>
+        <input type="checkbox" id="taste" name="Company cafeteria menu">
+        <label for="position">맛</label>
+        <input type="checkbox" id="visual" name="Company cafeteria menu">
+        <label for="position">비주얼</label>
+        <input type="checkbox" id="experience" name="Company cafeteria menu">
+        <label for="position">경험</label>
+        <input type="checkbox" id="position" name="Company cafeteria menu">
+        <label for="position">기대</label>
+
+      </fieldset>
+      <fieldset>
+        <legend>기타 의견</legend>
+        <textarea rows="3" cols="30" name="comment"></textarea>
+      </fieldset>
+      <input type="submit">
+    </form>
+  </main>
+  <hr>
+  <footer>
+    <p>입력하느라 수고하셨습니다. 많은 선택을 받은 메뉴로 다시 찾아뵙겠습니다.</p>
+  </footer>
+</body>
+</html>

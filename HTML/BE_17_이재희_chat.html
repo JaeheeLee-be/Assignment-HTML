@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>채팅방 만들기</title>
+  <link href="BE_17_이재희_chat.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <main class="chat-screen">
+      <section class="chat-screen__bar">
+        <div class="user">
+          <div class="user__column">
+            <div class="user__pic"></div>
+          </div>
+          <div class="user__column">
+            <p class="user__nick">
+              <span class="title">CSS 같이 공부하실 분</span>
+              <span class="gender">여성</span>
+            </p>
+            <p class="user__count">3</p>
+          </div>
+        </div>
+      </section>
+        <div class="chat-screen__content">
+          <p>원영: 안녕하세요 채팅방제 보고 왔어요.</p>
+          <p>재희: 반갑습니다 원영님 어서오세요.</p>
+          <p>재희: 제가 IVE에 장원영을 좋아하는데 이름이 같으시네요.</p>
+          <p>원영: 저도 장원영 좋아해요!</p>
+        </div>
+    </main>
+    
+    <form class="chat-form">
+      <section class="chat-form__field">
+        <textarea class="chat-form__msg"></textarea>
+        <input type="submit" value="전송" class="chat-form__bt">
+      </section>
+    </form>
+  </div>
+</body>
+</html>
