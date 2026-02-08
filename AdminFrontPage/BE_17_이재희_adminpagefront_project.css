@@ -1,0 +1,145 @@
+/* 기본 스타일 - 화면 위치 고정 */
+body {
+  transition: background-color 0.3s, color 0.3s;
+  overflow-x: hidden; /* body 가로 스크롤 차단 */
+}
+
+.container {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#darkModeBtn {
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+/* 테이블 스크롤 컨테이너 (가로+세로 모두 여기서) */
+.table-wrapper {
+  max-height: 400px;
+  overflow: auto;
+  margin-top: 30px;
+  position: relative;
+}
+
+/* 테이블 기본 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* 테이블 열 너비 고정 */
+}
+
+/* THEAD 고정 (좌우 + 상하 완전 고정) */
+.table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+  white-space: nowrap;
+  min-width: 100px;
+}
+
+/* 각 열에 고정 너비 지정 */
+.table thead th:nth-child(1) { width: 20%; }
+.table thead th:nth-child(2) { width: 25%; }
+.table thead th:nth-child(3) { width: 35%; }
+.table thead th:nth-child(4) { width: 20%; }
+
+.table tbody td:nth-child(1) { width: 20%; }
+.table tbody td:nth-child(2) { width: 25%; }
+.table tbody td:nth-child(3) { width: 35%; }
+.table tbody td:nth-child(4) { width: 20%; }
+
+/* 리셋 버튼 색상을 검색 버튼(btn-primary)과 동일하게 설정 */
+#resetBtn {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #fff;
+}
+
+#resetBtn:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+/* 다크모드 적용 */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+body.dark-mode .container {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+body.dark-mode h3 {
+  color: #ffffff;
+}
+
+/* 버튼 다크모드 (검색, 리셋, 다크모드 버튼 모두 동일 적용) */
+body.dark-mode .btn-primary,
+body.dark-mode #resetBtn,
+body.dark-mode #darkModeBtn {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #ffffff;
+}
+
+body.dark-mode .btn-primary:hover,
+body.dark-mode #resetBtn:hover,
+body.dark-mode #darkModeBtn:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+/* 테이블 다크모드 */
+body.dark-mode .table {
+  color: #ffffff !important;
+  background-color: #2a2a2a !important;
+  border-color: #444444 !important;
+}
+
+body.dark-mode .table thead th {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+  border-color: #444444 !important;
+}
+
+body.dark-mode .table tbody td {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+  border-color: #444444 !important;
+}
+
+/* 폼 요소 다크모드 */
+body.dark-mode .form-select,
+body.dark-mode .form-control {
+  background-color: #333333;
+  color: #ffffff;
+  border-color: #555555;
+}
+
+body.dark-mode .form-control::placeholder {
+  color: #aaaaaa;
+}
+
+/* 페이지네이션 */
+nav[aria-label="Page navigation example"] {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-item:first-child .page-link {
+  color: gray;  
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+body.dark-mode .page-link {
+  background-color: #333333;
+  color: #ffffff;
+  border-color: #555555;
+}
+
+body.dark-mode .page-link:hover {
+  background-color: #444444;
+}
