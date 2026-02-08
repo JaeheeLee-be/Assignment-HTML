@@ -1,0 +1,32 @@
+*{
+  text-align: center;
+  font-family: "Black Han Sans", sans-serif;  /* 전체 폰트를 Black Han Sans로 변경 family에서 style 3줄 추가 */
+  font-weight: 400;
+  font-style: normal;
+}
+
+html{
+  background-color: #FFFFFF;
+  font-size: 16px;
+}
+
+body{
+  background-color: rgb(226, 180, 188);
+  width: 640px;
+  margin: auto;
+  padding: 10px;
+}
+
+h1{
+  font-size: 48px;
+}
+
+img{
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+}
+
+p{
+  font-size: 1.3rem;
+}
